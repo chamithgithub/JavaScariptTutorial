@@ -24,13 +24,31 @@
     <button id="btn4">Style</button>
     <button id="btn5">Size</button>
     <button id="btn6">Visible</button>
+
+    <br />
+    <br />
+
+    <input id="txtFlid" type="text" />
+    <button id="txtInputChange">Update</button>
+
+    <p id="upTxt">There is a Text</p>
+
     <script type="text/javascript">
+      /*var x = 4;
+            x = 56;
+      */
+
+      // var y = "dsad";
+
+      // alert("num x is " + x);
+      // alert("y is " + y);
+
       // alert("welcome to this website");
       //single line comment
 
       /*
-         more line comment
-        */
+               more line comment
+              */
       // document.getElementById("text").innerHTML = "hello jemmy"; //text eka run weddi change kara
 
       document.getElementById("btnAdd").onclick = function () {
@@ -52,6 +70,15 @@
 
       document.getElementById("btn6").onclick = function () {
         document.getElementById("txt2").style.display = "none";
+      };
+
+      // =================
+      document.getElementById("txtInputChange").onclick = function () {
+        var TxtEnter = "";
+
+        TxtEnter = document.getElementById("txtFlid").value;
+
+        document.getElementById("upTxt").innerHTML = TxtEnter;
       };
     </script>
   </body>
