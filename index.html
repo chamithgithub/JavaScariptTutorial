@@ -5,16 +5,54 @@
   <body>
     <button onclick="alert('hello world')">click me</button>
 
-    <p id="text">chamith dilshan</p>
+    <p id="text">hello</p>
 
+    <button id="btnAdd">Add Text</button>
+
+    <p id="txt1"></p>
+    <button id="btnP">add paragraph</button>
+
+    <br />
+
+    <p id="txt2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nesciunt.
+      Molestias et amet minus maxime optio sint nisi quam dignissimos
+      consequatur molestiae consequuntur nesciunt vel ullam, voluptatum eveniet,
+      asperiores quaerat.
+    </p>
+
+    <button id="btn4">Style</button>
+    <button id="btn5">Size</button>
+    <button id="btn6">Visible</button>
     <script type="text/javascript">
-      alert("welcome to this website");
+      // alert("welcome to this website");
       //single line comment
 
       /*
          more line comment
         */
-      document.getElementById("text").innerHTML = "hello jimmy"; //text eka run weddi change kara
+      // document.getElementById("text").innerHTML = "hello jemmy"; //text eka run weddi change kara
+
+      document.getElementById("btnAdd").onclick = function () {
+        document.getElementById("text").innerHTML =
+          document.getElementById("text").innerHTML + " chamith";
+      };
+
+      document.getElementById("btnP").onclick = function () {
+        document.getElementById("txt1").innerHTML = "hellll;oo;oooooooo";
+      };
+      // ========================
+      document.getElementById("btn4").onclick = function () {
+        document.getElementById("txt2").style.color = "red";
+      };
+
+      document.getElementById("btn5").onclick = function () {
+        document.getElementById("txt2").style.fontSize = "40px";
+      };
+
+      document.getElementById("btn6").onclick = function () {
+        document.getElementById("txt2").style.display = "none";
+      };
     </script>
   </body>
 </html>
