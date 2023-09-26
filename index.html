@@ -32,7 +32,19 @@
     <button id="txtInputChange">Update</button>
 
     <p id="upTxt">There is a Text</p>
+    <br />
+    <br />
+    <hr />
+    <p>Enter Your UserName</p>
+    <p><input id="uName" type="text" placeholder="Enter here" /></p>
+    <p><button id="btnLog">Login</button></p>
+    <br />
+    <hr />
 
+    <p>think same number</p>
+    <p>number between 1-10</p>
+    <p><input type="text" /></p>
+    <p><button id="btnGuess">Guess</button></p>
     <script type="text/javascript">
       /*var x = 4;
             x = 56;
@@ -75,10 +87,23 @@
       // =================
       document.getElementById("txtInputChange").onclick = function () {
         var TxtEnter = "";
+        var h = " hellooo";
 
         TxtEnter = document.getElementById("txtFlid").value;
 
-        document.getElementById("upTxt").innerHTML = TxtEnter;
+        document.getElementById("text").innerHTML = h + TxtEnter;
+      };
+
+      // =====================
+      document.getElementById("btnLog").onclick = function () {
+        var EnterUserNamed = document.getElementById("uName").value;
+
+        var UserNamed = "chamith";
+        if (UserNamed == EnterUserNamed) {
+          alert("log in success!");
+        } else {
+          alert("wrong user name");
+        }
       };
     </script>
   </body>
