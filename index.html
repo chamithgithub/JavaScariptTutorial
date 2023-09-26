@@ -106,16 +106,34 @@
       //   }
       // };
       // ============================
-      document.getElementById("btnGuess").onclick = function () {
-        var enteredValue = document.getElementById("enterGuess").value;
-        var randomNum = Math.floor(Math.random() * 11);
+      // document.getElementById("btnGuess").onclick = function () {
+      //   var enteredValue = document.getElementById("enterGuess").value;
+      //   var randomNum = Math.floor(Math.random() * 11);
 
-        if (randomNum == enteredValue) {
-          alert("you win");
-        } else {
-          alert("you wrong !! i Am think " + randomNum);
-        }
-      };
+      //   if (randomNum == enteredValue) {
+      //     alert("you win");
+      //   } else {
+      //     alert("you wrong !! i Am think " + randomNum);
+      //   }
+      // };
+
+      // =================================
+
+      // for (var i = 0; i < 5; i++) {
+      //   alert(i);
+      // }
+      // =========================
+      var tweet = [
+        "good morning",
+        "take coffe",
+        "good afternoon",
+        "back home",
+        "good night",
+      ];
+
+      for (var i = 0; i < tweet.length; i++) {
+        alert(tweet[i]);
+      }
     </script>
   </body>
 </html>
