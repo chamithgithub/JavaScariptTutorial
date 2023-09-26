@@ -43,7 +43,7 @@
 
     <p>think same number</p>
     <p>number between 1-10</p>
-    <p><input type="text" /></p>
+    <p><input id="enterGuess" type="text" /></p>
     <p><button id="btnGuess">Guess</button></p>
     <script type="text/javascript">
       /*var x = 4;
@@ -95,14 +95,25 @@
       };
 
       // =====================
-      document.getElementById("btnLog").onclick = function () {
-        var EnterUserNamed = document.getElementById("uName").value;
+      // document.getElementById("btnLog").onclick = function () {
+      //   var EnterUserNamed = document.getElementById("uName").value;
 
-        var UserNamed = "chamith";
-        if (UserNamed == EnterUserNamed) {
-          alert("log in success!");
+      //   var UserNamed = "chamith";
+      //   if (UserNamed == EnterUserNamed) {
+      //     alert("log in success!");
+      //   } else {
+      //     alert("wrong user name");
+      //   }
+      // };
+      // ============================
+      document.getElementById("btnGuess").onclick = function () {
+        var enteredValue = document.getElementById("enterGuess").value;
+        var randomNum = Math.floor(Math.random() * 11);
+
+        if (randomNum == enteredValue) {
+          alert("you win");
         } else {
-          alert("wrong user name");
+          alert("you wrong !! i Am think " + randomNum);
         }
       };
     </script>
